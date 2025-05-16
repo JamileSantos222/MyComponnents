@@ -10,48 +10,110 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <CheckBox
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/chkCompromissos"
-            android:text="Compromissos"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:text="Escolha"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/chkAtividades"
-        android:text="Atividades"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/chkCheck"
-        android:text="Check"/>
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Wi-fi" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swModo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Modo Avião" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Bluetooth" />
+
+
+        <CheckBox
+            android:id="@+id/chkCompromissos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compromissos" />
+
+        <CheckBox
+            android:id="@+id/chkAtividades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atividades" />
+
+        <CheckBox
+            android:id="@+id/chkCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check" />
+
+        <CheckBox
+            android:id="@+id/Exercícios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercícios" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:text="Escolha"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdbVerdadeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verdadeiro" />
+            <RadioButton
+                android:id="@+id/rdbFalso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Falso"/>
+
+        </RadioGroup>
+
 
     </LinearLayout>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
         android:id="@+id/idFAB"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_email"
         android:layout_gravity="bottom|right"
         android:layout_margin="20dp"
-        />
+        android:src="@drawable/baseline_email" />
+
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/idFABExtend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Novo Agendamento"
-        app:icon="@drawable/baseline_message"
-        android:id="@+id/idFABExtend"
         android:layout_gravity="bottom|left"
-        android:layout_margin="20dp"/>
-
-
-
-
+        android:layout_margin="20dp"
+        android:text="Novo Agendamento"
+        app:icon="@drawable/baseline_message" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
